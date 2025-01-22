@@ -1,6 +1,24 @@
 img {
     display: block;
-    max-width: 300px;
+		max-width: 30em;
     height: auto;
     width: auto;
+		padding: 1rem;
+}
+
+figure {
+	text-align: center;
+}
+
+figure img {
+	display: inline-block;
+}
+
+figcaption {
+	padding-top: 0.5em;
+}
+
+.hanging-indent {
+	text-indent: -3em;
+	margin-left: 3em;
 }
