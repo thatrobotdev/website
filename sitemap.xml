@@ -2,42 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
+		<loc>https://www.jameskerrane.com/blog/bird-tidbits/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://www.jameskerrane.com/blog/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/projects/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/projects/oneshot-refuge-factory-puzzle-solver/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/tags/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/tags/birds/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/tags/books/</loc>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/tags/projects/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/tags/information-theory/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://www.jameskerrane.com/tags/swift/</loc>
-		<lastmod>2025-01-02</lastmod>
+		<lastmod>2025-01-22</lastmod>
 	</url>
 </urlset>
