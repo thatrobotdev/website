@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
-	<title>James Kerrane</title>
-	<subtitle>James Kerrane&#39;s personal website.</subtitle>
-	<link href="https://www.jameskerrane.com/feed/feed.xml" rel="self"/>
-	<link href="https://www.jameskerrane.com/"/>
-	<updated>2025-01-22T00:00:00Z</updated>
-	<id>https://www.jameskerrane.com</id>
-	<author>
-		<name>JP Kerrane</name>
-		<email>hi@jameskerrane.com</email>
-	</author>
-	
-	<entry>
-		<title>Bird Tidbits</title>
-		<link href="https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/"/>
-		<updated>2025-01-22T00:00:00Z</updated>
-		<id>https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/</id>
-		<content type="html">&lt;p&gt;I just read &lt;em&gt;The Snow Goose&lt;/em&gt; by Paul Gallico, and I learned some bird tidbits I wanted to share!&lt;/p&gt;
-&lt;h2 id=&quot;skeins&quot; tabindex=&quot;-1&quot;&gt;skeins &lt;a class=&quot;header-anchor&quot; href=&quot;https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/#skeins&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+<?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>James Kerrane</title>
+  <subtitle>This is a longer description about your blog.</subtitle>
+  <link href="https://jameskerrane.com/feed/feed.xml" rel="self" />
+  <link href="https://jameskerrane.com/" />
+  <updated>2025-01-22T00:00:00Z</updated>
+  <id>https://jameskerrane.com/</id>
+  <author>
+    <name>James Kerrane</name>
+  </author>
+  <entry>
+    <title>Bird Tidbits</title>
+    <link href="https://jameskerrane.com/blog/2025/01/22/bird-tidbits/" />
+    <updated>2025-01-22T00:00:00Z</updated>
+    <id>https://jameskerrane.com/blog/2025/01/22/bird-tidbits/</id>
+    <content type="html">&lt;p&gt;I just read &lt;em&gt;The Snow Goose&lt;/em&gt; by Paul Gallico, and I learned some bird tidbits I wanted to share!&lt;/p&gt;
+&lt;h2 id=&quot;skeins&quot;&gt;skeins&lt;/h2&gt;
 &lt;figure&gt;
-	&lt;img alt=&quot;A sky full of snow geese (Chen caerulescens)&quot; src=&quot;https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/A_Sky_Full_of_Snow_Geese_(16664971147).jpg&quot;&gt;
+	&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/LCghsLDEYG-5184.avif 5184w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/LCghsLDEYG-5184.webp 5184w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/LCghsLDEYG-5184.jpeg&quot; alt=&quot;A sky full of snow geese (Chen caerulescens)&quot; width=&quot;5184&quot; height=&quot;3456&quot;&gt;&lt;/picture&gt;
 	&lt;figcaption&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:A_Sky_Full_of_Snow_Geese_(16664971147).jpg&quot;&gt;USFWS Mountain-Prairie&lt;/a&gt;, &lt;a href=&quot;https://creativecommons.org/licenses/by/2.0&quot;&gt;CC BY 2.0&lt;/a&gt;, via Wikimedia Commons&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;blockquote&gt;
@@ -28,12 +27,12 @@
 &lt;p&gt;Flocks of geese or ducks are called &lt;strong&gt;skeins&lt;/strong&gt;! &lt;a href=&quot;https://www.merriam-webster.com/dictionary/skein&quot;&gt;This is the same word as a length of yarn&lt;/a&gt; (“Skein”). I was a bit confused with the connection, but &lt;a href=&quot;https://scottishwildlifetrust.org.uk/2020/09/why-do-we-call-them-skeins-of-geese/&quot;&gt;the Scottish Wildlife Trust says&lt;/a&gt;, “[w]ith their very efficient, orderly lines, they can kind of look like a long piece of wool gliding through the sky, rippling as the geese change positions.” Who knows, though, because they even concede it&#39;s a “bit of an etymological mystery.”&lt;/p&gt;
 &lt;p&gt;I also adore how the edition of the book I was reading typeset the flock&#39;s formation as a tiny &lt;strong&gt;v&lt;/strong&gt;.&lt;/p&gt;
 &lt;figure&gt;
-	&lt;img alt=&quot;A scan of The Snow Goose, on page &quot; src=&quot;https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/tiny-v.png&quot;&gt;
+	&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/TV0DSCeEvv-820.avif 820w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/TV0DSCeEvv-820.webp 820w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/TV0DSCeEvv-820.png&quot; alt=&quot;A scan of The Snow Goose, on page &quot; width=&quot;820&quot; height=&quot;72&quot;&gt;&lt;/picture&gt;
 	&lt;figcaption&gt;(Gallico 24)&lt;/figcaption&gt;
 &lt;/figure&gt;
-&lt;h2 id=&quot;primaries&quot; tabindex=&quot;-1&quot;&gt;primaries &lt;a class=&quot;header-anchor&quot; href=&quot;https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/#primaries&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;primaries&quot;&gt;primaries&lt;/h2&gt;
 &lt;figure&gt;
-	&lt;img alt=&quot;Bird wing bone structure, indicating attachment points of remiges.&quot; src=&quot;https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/Birdwing.svg&quot;&gt;
+	&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/EVCE8dTJ6v-1300.avif 1300w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/EVCE8dTJ6v-1300.webp 1300w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://jameskerrane.com/blog/2025/01/22/bird-tidbits/EVCE8dTJ6v-1300.svg&quot; alt=&quot;Bird wing bone structure, indicating attachment points of remiges.&quot; width=&quot;1300&quot; height=&quot;718&quot;&gt;&lt;/picture&gt;
 	&lt;figcaption&gt;&lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Birdwing.svg&quot;&gt;L. Shyamal&lt;/a&gt;, &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/2.5&quot;&gt;CC BY-SA 2.5&lt;/a&gt;, via Wikimedia Commons&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;blockquote&gt;
@@ -46,12 +45,12 @@
 &lt;p&gt;These pinions are the outermost primaries, which are flight feathers that allow a bird to take flight!&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Those are all for now, but it was such a great read! If you are interested in reading &lt;em&gt;The Snow Goose&lt;/em&gt; &lt;a href=&quot;https://catalog.hathitrust.org/Record/001112530&quot;&gt;you can read an e-book scan here&lt;/a&gt; or &lt;a href=&quot;https://search.worldcat.org/en/title/284978&quot;&gt;find it in print at a library (WorldCat)&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;works-cited&quot; tabindex=&quot;-1&quot;&gt;Works Cited &lt;a class=&quot;header-anchor&quot; href=&quot;https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/#works-cited&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;works-cited&quot;&gt;Works Cited&lt;/h2&gt;
 &lt;div class=&quot;hanging-indent&quot;&gt;
 	&lt;p&gt;Gallico, Paul. &lt;i&gt;The Snow Goose&lt;/i&gt;. A. A. Knopf, 1941. &lt;i&gt;HathiTrust Digital Library&lt;/i&gt;, &lt;a href=&quot;https://hdl.handle.net/2027/uc1.b3688343&quot;&gt;hdl.handle.net/2027/uc1.b3688343&lt;/a&gt;. Accessed 22 Jan. 2025.&lt;/p&gt;
 	&lt;p&gt;“Skein.” &lt;i&gt;Merriam-Webster.com Dictionary&lt;/i&gt;, Merriam-Webster, &lt;a href=&quot;https://www.merriam-webster.com/dictionary/skein&quot;&gt;merriam-webster.com/dictionary/skein&lt;/a&gt;. Accessed 22 Jan. 2025.&lt;/p&gt;
 	&lt;p&gt;“Why Do We Call Them ‘skeins’ of Geese?” &lt;i&gt;Scottish Wildlife Trust&lt;/i&gt;, 25 Sept. 2020, &lt;a href=&quot;https://scottishwildlifetrust.org.uk/2020/09/why-do-we-call-them-skeins-of-geese&quot;&gt;scottishwildlifetrust.org.uk/2020/09/why-do-we-call-them-skeins-of-geese&lt;/a&gt;. Accessed 22 Jan. 2025.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-	</entry>
+  </entry>
 </feed>

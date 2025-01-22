@@ -6,12 +6,9 @@
 		<title>James Kerrane</title>
 		<meta name="description" content="James Kerrane&#39;s personal website.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="James Kerrane">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="James Kerrane">
 
 		<meta name="generator" content="Eleventy v3.0.0">
-		
-		<style>* { box-sizing: border-box; }
-/* Defaults */
+		<style>/* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
@@ -54,6 +51,10 @@
 	box-sizing: border-box;
 }
 
+@view-transition {
+	navigation: auto;
+}
+
 html,
 body {
 	padding: 0;
@@ -80,6 +81,27 @@ body {
 	width: 1px;
 }
 
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
 p:last-child {
 	margin-bottom: 0;
 }
@@ -102,7 +124,8 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
-main {
+main,
+footer {
 	padding: 1rem;
 }
 main :first-child {
@@ -119,9 +142,18 @@ header:after {
 }
 
 .links-nextprev {
-	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
 	border-top: 1px dashed var(--color-gray-20);
 	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
 }
 
 table {
@@ -150,6 +182,7 @@ pre:not([class*="language-"]) {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
+	overflow-x: auto;
 }
 code {
 	word-break: break-all;
@@ -208,7 +241,8 @@ header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-right: .3em;
+	padding-left: .25em;
+	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
@@ -241,30 +275,6 @@ header {
 .post-metadata time {
 	margin-right: 1em;
 }
-
-/* Direct Links / Markdown Headers */
-.header-anchor {
-	text-decoration: none;
-	font-style: normal;
-	font-size: 1em;
-	margin-left: .1em;
-}
-a[href].header-anchor,
-a[href].header-anchor:visited {
-	color: transparent;
-}
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
-	text-decoration: underline;
-}
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
-	color: #aaa;
-}
-
-h2 + .header-anchor {
-	font-size: 1.5em;
-}
 /* Message Box */
 .message-box {
 	--color-message-box: #ffc;
@@ -293,19 +303,21 @@ h2 + .header-anchor {
 		<header>
 			<a href="/" class="home-link">James Kerrane</a>
 			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
+			<heading-anchors>
 			
 
-<h2>January 2025</h2>
+<h2 id="january-2025">January 2025</h2>
 
 
   
@@ -321,10 +333,13 @@ h2 + .header-anchor {
 
 
 
+			</heading-anchors>
 		</main>
 		<footer class="message-box">
-				<p><em>Made with <a href="https://www.11ty.dev/">Eleventy</a>! Based on the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
-				<picture><source type="image/webp" srcset="/img/IdthKOzqFA-350.webp 350w"><img src="/img/IdthKOzqFA-350.jpeg" alt="A possum parent and two possum kids hanging from the iconic red balloon" style="width: auto;" width="350" height="685"></picture>
+				<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a>!</em></p>
+				<picture><source type="image/avif" srcset="/blog/2025/01/xbVnp_hAou-350.avif 350w"><source type="image/webp" srcset="/blog/2025/01/xbVnp_hAou-350.webp 350w"><img loading="lazy" decoding="async" src="/blog/2025/01/xbVnp_hAou-350.png" alt="A possum parent and two possum kids hanging from the iconic red balloon" style="width: 7.8em;" width="350" height="685"></picture>
 		</footer>
+
+		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>

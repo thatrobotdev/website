@@ -32,46 +32,6 @@
 	</url>
 	
 	<url>
-		<loc>https://www.jameskerrane.com/tags/birds/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/books/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/projects/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/information-theory/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/swift/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/postsbyyear/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/postsbyyearmonthday/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://www.jameskerrane.com/tags/postsbyyearmonth/</loc>
-		<lastmod>2025-01-22</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://www.jameskerrane.com/blog/2025/</loc>
 		<lastmod>2025-01-22</lastmod>
 	</url>
@@ -83,6 +43,11 @@
 	
 	<url>
 		<loc>https://www.jameskerrane.com/blog/2025/01/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/feed/feed.xml</loc>
 		<lastmod>2025-01-22</lastmod>
 	</url>
 </urlset>

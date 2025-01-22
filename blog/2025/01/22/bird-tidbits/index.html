@@ -6,10 +6,8 @@
 		<title>Bird Tidbits</title>
 		<meta name="description" content="James Kerrane&#39;s personal website.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="James Kerrane">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="James Kerrane">
 
 		<meta name="generator" content="Eleventy v3.0.0">
-		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -202,7 +200,6 @@ figcaption {
 	text-indent: -3em;
 	margin-left: 3em;
 }
-* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -246,6 +243,10 @@ figcaption {
 	box-sizing: border-box;
 }
 
+@view-transition {
+	navigation: auto;
+}
+
 html,
 body {
 	padding: 0;
@@ -272,6 +273,27 @@ body {
 	width: 1px;
 }
 
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	width: 100%;
+	height: auto;
+}
+iframe {
+	aspect-ratio: 16/9;
+}
+
 p:last-child {
 	margin-bottom: 0;
 }
@@ -294,7 +316,8 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
-main {
+main,
+footer {
 	padding: 1rem;
 }
 main :first-child {
@@ -311,9 +334,18 @@ header:after {
 }
 
 .links-nextprev {
-	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
 	border-top: 1px dashed var(--color-gray-20);
 	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
 }
 
 table {
@@ -342,6 +374,7 @@ pre:not([class*="language-"]) {
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
+	overflow-x: auto;
 }
 code {
 	word-break: break-all;
@@ -400,7 +433,8 @@ header {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
-	padding-right: .3em;
+	padding-left: .25em;
+	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
 	text-decoration-thickness: 1px;
@@ -433,30 +467,6 @@ header {
 .post-metadata time {
 	margin-right: 1em;
 }
-
-/* Direct Links / Markdown Headers */
-.header-anchor {
-	text-decoration: none;
-	font-style: normal;
-	font-size: 1em;
-	margin-left: .1em;
-}
-a[href].header-anchor,
-a[href].header-anchor:visited {
-	color: transparent;
-}
-a[href].header-anchor:focus,
-a[href].header-anchor:hover {
-	text-decoration: underline;
-}
-a[href].header-anchor:focus,
-:hover > a[href].header-anchor {
-	color: #aaa;
-}
-
-h2 + .header-anchor {
-	font-size: 1.5em;
-}
 /* Message Box */
 .message-box {
 	--color-message-box: #ffc;
@@ -485,18 +495,20 @@ h2 + .header-anchor {
 		<header>
 			<a href="/" class="home-link">James Kerrane</a>
 			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Blog</a></li>
 					<li class="nav-item"><a href="/projects/">Projects</a></li>
+					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
+			<heading-anchors>
 			
-<h1>Bird Tidbits</h1>
+<h1 id="bird-tidbits">Bird Tidbits</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="2025-01-22">22 January 2025</time></li>
@@ -505,9 +517,9 @@ h2 + .header-anchor {
 </ul>
 
 <p>I just read <em>The Snow Goose</em> by Paul Gallico, and I learned some bird tidbits I wanted to share!</p>
-<h2 id="skeins" tabindex="-1">skeins <a class="header-anchor" href="#skeins">#</a></h2>
+<h2 id="skeins">skeins</h2>
 <figure>
-	<picture><source type="image/webp" srcset="/blog/2025/01/22/bird-tidbits/Sn9OC-0GHT-5184.webp 5184w"><img alt="A sky full of snow geese (Chen caerulescens)" src="/blog/2025/01/22/bird-tidbits/Sn9OC-0GHT-5184.jpeg" width="5184" height="3456"></picture>
+	<picture><source type="image/avif" srcset="/blog/2025/01/22/bird-tidbits/LCghsLDEYG-5184.avif 5184w"><source type="image/webp" srcset="/blog/2025/01/22/bird-tidbits/LCghsLDEYG-5184.webp 5184w"><img loading="lazy" decoding="async" src="/blog/2025/01/22/bird-tidbits/LCghsLDEYG-5184.jpeg" alt="A sky full of snow geese (Chen caerulescens)" width="5184" height="3456"></picture>
 	<figcaption><a href="https://commons.wikimedia.org/wiki/File:A_Sky_Full_of_Snow_Geese_(16664971147).jpg">USFWS Mountain-Prairie</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</figcaption>
 </figure>
 <blockquote>
@@ -516,12 +528,12 @@ h2 + .header-anchor {
 <p>Flocks of geese or ducks are called <strong>skeins</strong>! <a href="https://www.merriam-webster.com/dictionary/skein">This is the same word as a length of yarn</a> (“Skein”). I was a bit confused with the connection, but <a href="https://scottishwildlifetrust.org.uk/2020/09/why-do-we-call-them-skeins-of-geese/">the Scottish Wildlife Trust says</a>, “[w]ith their very efficient, orderly lines, they can kind of look like a long piece of wool gliding through the sky, rippling as the geese change positions.” Who knows, though, because they even concede it's a “bit of an etymological mystery.”</p>
 <p>I also adore how the edition of the book I was reading typeset the flock's formation as a tiny <strong>v</strong>.</p>
 <figure>
-	<picture><source type="image/webp" srcset="/blog/2025/01/22/bird-tidbits/DHvKObtrIk-820.webp 820w"><img alt="A scan of The Snow Goose, on page " src="/blog/2025/01/22/bird-tidbits/DHvKObtrIk-820.jpeg" width="820" height="72"></picture>
+	<picture><source type="image/avif" srcset="/blog/2025/01/22/bird-tidbits/TV0DSCeEvv-820.avif 820w"><source type="image/webp" srcset="/blog/2025/01/22/bird-tidbits/TV0DSCeEvv-820.webp 820w"><img loading="lazy" decoding="async" src="/blog/2025/01/22/bird-tidbits/TV0DSCeEvv-820.png" alt="A scan of The Snow Goose, on page " width="820" height="72"></picture>
 	<figcaption>(Gallico 24)</figcaption>
 </figure>
-<h2 id="primaries" tabindex="-1">primaries <a class="header-anchor" href="#primaries">#</a></h2>
+<h2 id="primaries">primaries</h2>
 <figure>
-	<picture><source type="image/webp" srcset="/blog/2025/01/22/bird-tidbits/jGlD8pwCI9-1300.webp 1300w"><img alt="Bird wing bone structure, indicating attachment points of remiges." src="/blog/2025/01/22/bird-tidbits/jGlD8pwCI9-1300.jpeg" width="1300" height="718"></picture>
+	<picture><source type="image/avif" srcset="/blog/2025/01/22/bird-tidbits/EVCE8dTJ6v-1300.avif 1300w"><source type="image/webp" srcset="/blog/2025/01/22/bird-tidbits/EVCE8dTJ6v-1300.webp 1300w"><img loading="lazy" decoding="async" src="/blog/2025/01/22/bird-tidbits/EVCE8dTJ6v-1300.svg" alt="Bird wing bone structure, indicating attachment points of remiges." width="1300" height="718"></picture>
 	<figcaption><a href="https://commons.wikimedia.org/wiki/File:Birdwing.svg">L. Shyamal</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>, via Wikimedia Commons</figcaption>
 </figure>
 <blockquote>
@@ -534,7 +546,7 @@ h2 + .header-anchor {
 <p>These pinions are the outermost primaries, which are flight feathers that allow a bird to take flight!</p>
 <hr>
 <p>Those are all for now, but it was such a great read! If you are interested in reading <em>The Snow Goose</em> <a href="https://catalog.hathitrust.org/Record/001112530">you can read an e-book scan here</a> or <a href="https://search.worldcat.org/en/title/284978">find it in print at a library (WorldCat)</a>.</p>
-<h2 id="works-cited" tabindex="-1">Works Cited <a class="header-anchor" href="#works-cited">#</a></h2>
+<h2 id="works-cited">Works Cited</h2>
 <div class="hanging-indent">
 	<p>Gallico, Paul. <i>The Snow Goose</i>. A. A. Knopf, 1941. <i>HathiTrust Digital Library</i>, <a href="https://hdl.handle.net/2027/uc1.b3688343">hdl.handle.net/2027/uc1.b3688343</a>. Accessed 22 Jan. 2025.</p>
 	<p>“Skein.” <i>Merriam-Webster.com Dictionary</i>, Merriam-Webster, <a href="https://www.merriam-webster.com/dictionary/skein">merriam-webster.com/dictionary/skein</a>. Accessed 22 Jan. 2025.</p>
@@ -542,10 +554,13 @@ h2 + .header-anchor {
 </div>
 
 
+			</heading-anchors>
 		</main>
 		<footer class="message-box">
-				<p><em>Made with <a href="https://www.11ty.dev/">Eleventy</a>! Based on the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
-				<picture><source type="image/webp" srcset="/img/IdthKOzqFA-350.webp 350w"><img src="/img/IdthKOzqFA-350.jpeg" alt="A possum parent and two possum kids hanging from the iconic red balloon" style="width: auto;" width="350" height="685"></picture>
+				<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a>!</em></p>
+				<img src="content/blog/2025/01/22/public/img/possum.png" alt="A possum parent and two possum kids hanging from the iconic red balloon" style="width: 7.8em;">
 		</footer>
+
+		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 	</body>
 </html>
