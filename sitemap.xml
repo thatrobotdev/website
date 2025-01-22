@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://www.jameskerrane.com/blog/bird-tidbits/</loc>
+		<loc>https://www.jameskerrane.com/blog/2025/01/22/bird-tidbits/</loc>
 		<lastmod>2025-01-22</lastmod>
 	</url>
 	
@@ -22,7 +22,7 @@
 	</url>
 	
 	<url>
-		<loc>https://www.jameskerrane.com/projects/oneshot-refuge-factory-puzzle-solver/</loc>
+		<loc>https://www.jameskerrane.com/projects/dining-dollar-tracker/</loc>
 		<lastmod>2025-01-22</lastmod>
 	</url>
 	
@@ -53,6 +53,36 @@
 	
 	<url>
 		<loc>https://www.jameskerrane.com/tags/swift/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/tags/postsbyyear/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/tags/postsbyyearmonthday/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/tags/postsbyyearmonth/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/blog/2025/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/blog/2025/01/22/</loc>
+		<lastmod>2025-01-22</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://www.jameskerrane.com/blog/2025/01/</loc>
 		<lastmod>2025-01-22</lastmod>
 	</url>
 </urlset>
