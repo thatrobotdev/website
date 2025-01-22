@@ -29,16 +29,18 @@
 	"homepage": "https://www.jameskerrane.com",
 	"type": "module",
 	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-img": "^6.0.1",
 		"@11ty/eleventy-navigation": "^0.3.5",
-		"@11ty/eleventy-plugin-bundle": "^1.0.4",
-		"@11ty/eleventy-plugin-rss": "^1.2.0",
+		"@11ty/eleventy-plugin-rss": "^2.0.2",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-		"archiver": "^7.0.1",
-		"luxon": "^3.3.0",
-		"markdown-it-anchor": "^8.6.7"
+		"cross-env": "^7.0.3",
+		"lodash": "^4.17.21",
+		"luxon": "^3.5.0",
+		"zod": "^3.23.8",
+		"zod-validation-error": "^3.3.1"
 	},
 	"dependencies": {
-		"@11ty/eleventy": "^3.0.0",
-		"@11ty/eleventy-img": "^5.0.0"
+		"@zachleat/heading-anchors": "^1.0.1"
 	}
 }

@@ -1,21 +1,19 @@
----
-layout: layouts/home.html
-eleventyNavigation:
-  key: Home
-  order: 1
-numberOfLatestPostsToShow: 3
+---js
+const eleventyNavigation = {
+	key: "Home",
+	order: 1
+};
+
+const numberOfLatestPostsToShow = 3;
 ---
 
 <div class="message-box">
-<p>Hello, website visitor! This website is under active construction, so please check me out on other platforms as I port information to this new site! Thank you very much.</p>
-<ul>
-<li>Interested in my <b>professional history</b>? <a href="https://www.linkedin.com/in/jameskerrane/">Please visit my LinkedIn profile.</a></li>
-<li>Interested in my <b>current projects</b>? <a href="https://www.github.com/thatrobotdev">Please check out my GitHub profile!</a></li>
-<li>Interested in connecting? Please email me at <a href="mailto:jkerrane3@gatech.edu">jkerrane3@gatech.edu</a>.</li>
-</ul>
-
-<p></p>
-
+	<p>Hello, website visitor! This website is under active construction, so please check me out on other platforms as I port information to this new site! Thank you very much.</p>
+	<ul>
+		<li>Interested in my <b>professional history</b>? <a href="https://www.linkedin.com/in/jameskerrane/">Please visit my LinkedIn profile.</a></li>
+		<li>Interested in my <b>current projects</b>? <a href="https://www.github.com/thatrobotdev">Please check out my GitHub profile!</a></li>
+		<li>Interested in connecting? Please email me at <a href="mailto:jkerrane3@gatech.edu">jkerrane3@gatech.edu</a>.</li>
+	</ul>
 </div>
 
 <h1>Hello, I'm James Kerrane, a first-year Computer Science student at Georgia Tech and a maker.</h1>
@@ -30,7 +28,7 @@ numberOfLatestPostsToShow: 3
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
-{% include "postslist.html" %}
+{% include "postslist.njk" %}
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {% if morePosts > 0 %}
