@@ -1,6 +1,7 @@
 ---
 title: OneShot Refuge Factory Puzzle Solver
 tags: "Information Theory"
+draft: true
 ---
 
 ## Status

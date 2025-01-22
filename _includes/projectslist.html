@@ -1,6 +1,4 @@
-{%- css %}.projectlist { counter-reset: start-from {{ (projectslistCounter or
-projectslist.length) + 1 }} }{% endcss %}
-<ol reversed class="projectlist">
+<ul reversed class="projectlist">
 	{% for project in projectslist | reverse %}
 	<li
 		class="projectlist-item{% if project.url == url %} projectlist-item-active{% endif %}"
@@ -17,4 +15,4 @@ projectslist.length) + 1 }} }{% endcss %}
 		>
 	</li>
 	{% endfor %}
-</ol>
+</ul>
