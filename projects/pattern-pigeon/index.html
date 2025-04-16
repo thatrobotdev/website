@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>🐦 Pattern Pigeon | A conversational assistant built with Dialogflow CX to teach the Strategy, Composite, and Observer design patterns.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="🐦 Pattern Pigeon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A conversational assistant built with Dialogflow CX to teach the Strategy, Composite, and Observer design patterns." />
+<meta property="og:description" content="A conversational assistant built with Dialogflow CX to teach the Strategy, Composite, and Observer design patterns." />
+<link rel="canonical" href="https://www.jameskerrane.com/projects/pattern-pigeon/" />
+<meta property="og:url" content="https://www.jameskerrane.com/projects/pattern-pigeon/" />
+<meta property="og:site_name" content="🐦 Pattern Pigeon" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="🐦 Pattern Pigeon" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"A conversational assistant built with Dialogflow CX to teach the Strategy, Composite, and Observer design patterns.","headline":"🐦 Pattern Pigeon","name":"🐦 Pattern Pigeon","url":"https://www.jameskerrane.com/projects/pattern-pigeon/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=3f65a13260d8edb0e0df68d011a5abb15d1d649f">
+    <script src="/projects/pattern-pigeon/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- start custom head snippets -->
+
+<link rel="shortcut icon" type="image/x-icon" href="/projects/pattern-pigeon/favicon.ico">
+
+<!-- end custom head snippets -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header >
+        <h1>🐦 Pattern Pigeon</h1>
+        
+          <p>A conversational assistant built with Dialogflow CX to teach the Strategy, Composite, and Observer design patterns.</p>
+        
+        <p class="view"><a href="https://github.com/thatrobotdev/Pattern-Pigeon-website">View the Project on GitHub <small></small></a></p>
+        <ul>
+        
+          <li><a href="https://github.com/thatrobotdev/Pattern-Pigeon-website">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+
+      <details>
+  <summary>Table of Contents</summary>
+  <div>
+<ul id="markdown-toc">
+  <li><a href="#coo-coo-salutations" id="markdown-toc-coo-coo-salutations">Coo coo! (Salutations!)</a>    <ul>
+      <li><a href="#two-ways-to-squack-a-hello" id="markdown-toc-two-ways-to-squack-a-hello">Two ways to squack a “Hello!”</a></li>
+      <li><a href="#learn-the-strategy-composite-and-observer-patterns" id="markdown-toc-learn-the-strategy-composite-and-observer-patterns">Learn the Strategy, Composite, and Observer Patterns</a>        <ul>
+          <li><a href="#strategy" id="markdown-toc-strategy">Strategy</a></li>
+          <li><a href="#composite" id="markdown-toc-composite">Composite</a></li>
+          <li><a href="#observer" id="markdown-toc-observer">Observer</a>            <ul>
+              <li><a href="#what-are-examples-of-the-observer-pattern" id="markdown-toc-what-are-examples-of-the-observer-pattern">What are examples of the observer pattern?</a></li>
+              <li><a href="#what-is-the-difference-between-the-publishersubject-and-the-observer" id="markdown-toc-what-is-the-difference-between-the-publishersubject-and-the-observer">What is the difference between the Publisher/Subject and the Observer?</a></li>
+              <li><a href="#why-use-the-observer-pattern" id="markdown-toc-why-use-the-observer-pattern">Why use the Observer pattern?</a></li>
+              <li><a href="#what-disadvantages-are-there-with-the-observer-pattern" id="markdown-toc-what-disadvantages-are-there-with-the-observer-pattern">What disadvantages are there with the Observer pattern?</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#for-developers" id="markdown-toc-for-developers">For developers</a>        <ul>
+          <li><a href="#source-code" id="markdown-toc-source-code">Source code</a></li>
+          <li><a href="#contributing" id="markdown-toc-contributing">Contributing</a></li>
+        </ul>
+      </li>
+      <li><a href="#license" id="markdown-toc-license">License</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</details>
+
+<h1 id="coo-coo-salutations">Coo coo! (Salutations!)</h1>
+
+<blockquote>
+  <p><span class="noto-color-emoji-regular">🐦</span> Coo coo! I’m Pattern Pigeon–your feathered friend here to help you understand software architecture patterns like Strategy, Composite, and Observer. I might ruffle in a few pigeon facts too. What are you curious about today?</p>
+</blockquote>
+
+<p><span class="noto-color-emoji-regular">🐦</span> Pattern Pigeon is a <span class="tooltip"><a href="https://cloud.google.com/dialogflow/cx/docs/generative-deterministic#deterministic">deterministic</a><span class="tooltip-text">All responses are generated by the agent, without generative input from a large language model (LLM). However, Flows use language models for understanding end-user intention, which may not be completely deterministic.</span></span> conversational assistant built with Google Cloud’s <a href="https://dialogflow.cloud.google.com/cx">Dialogflow CX</a> to teach the <a href="https://en.wikipedia.org/wiki/Strategy_pattern">Strategy</a>, <a href="https://en.wikipedia.org/wiki/Composite_pattern">Composite</a>, and <a href="https://en.wikipedia.org/wiki/Observer_pattern">Observer</a> design patterns.</p>
+
+<h2 id="two-ways-to-squack-a-hello">Two ways to squack a “Hello!”</h2>
+
+<ol>
+  <li>Why not say hello using the messaging client on the right of your screen?</li>
+  <li>Call <a href="tel:+13613605763">(361) 360-5763</a> and you can squack wire to wire!</li>
+</ol>
+
+<h2 id="learn-the-strategy-composite-and-observer-patterns">Learn the Strategy, Composite, and Observer Patterns</h2>
+
+<h3 id="strategy">Strategy</h3>
+
+<p>Coming soon!</p>
+
+<h3 id="composite">Composite</h3>
+
+<p>Coming soon!</p>
+
+<h3 id="observer">Observer</h3>
+
+<p>The Observer Pattern is a behavioral design pattern that establishes a subscription system, where a “Publisher” (or “Subject”) can notify multiple “Observers” of events or changes in state.</p>
+
+<h4 id="what-are-examples-of-the-observer-pattern">What are examples of the observer pattern?</h4>
+
+<ul>
+  <li>
+    <p>One is the multiplayer game Pokémon Go. Imagine there’s a wild Pigeon…errr…a wild Pidgeot…, and four players are nearby trying to catch it. When one player successfully captures it, the game needs to notify the other players that the Pidgeot is no longer available. The game server (the “Publisher”) sends updates to all connected clients (the “Observers”) to reflect this change, ensuring consistency across the game world. Hope that helps, coo coo!</p>
+  </li>
+  <li>
+    <p>Another is a weather app. When an event occurs—like a temperature change or an updated rain forecast—the server (acting as the “Publisher”) sends out the new data. All subscribed client apps (the “Observers”) receive the update and refresh the information displayed to the user.</p>
+  </li>
+</ul>
+
+<h4 id="what-is-the-difference-between-the-publishersubject-and-the-observer">What is the difference between the Publisher/Subject and the Observer?</h4>
+
+<p>In this pattern, the Publisher/Subject maintains a list of all the registered subscribers, then when an event occurs that requires a notification, calls a method to each subscriber to let them know that the event occurred. Thus, the observer is the class that responds to the event.</p>
+
+<h4 id="why-use-the-observer-pattern">Why use the Observer pattern?</h4>
+
+<p>There are many advantages. The subject and the observer do not require tight coupling, which makes their connection very flexible and extensible. You can add new observers very easily without modifying the subject. It is also a very efficient way to get a message out from one server to many clients in a real-time scenario.</p>
+
+<h4 id="what-disadvantages-are-there-with-the-observer-pattern">What disadvantages are there with the Observer pattern?</h4>
+
+<p>With many observers, there could be performance implications of notifying all of them if the operation is costly or takes a long time. Also, the pattern relies on the reliability and format of the notification from the subject, so any updates to the publisher requires updates to the observers.</p>
+
+<h2 id="for-developers">For developers</h2>
+
+<h3 id="source-code">Source code</h3>
+
+<p>You can find the source code repository for Pattern Pigeon at <a href="https://github.com/thatrobotdev/Pattern-Pigeon">thatrobotdev/Pattern-Pigeon</a>.</p>
+
+<h3 id="contributing">Contributing</h3>
+
+<p>Is our feathered friend not squacking right? Noticed a typo? Want to add new content? Well you’re in luck! Follow these instructions to warp Pattern Pigeon into your Dialogflow CX dashboard so you can contribute changes!</p>
+
+<p>Follow the instructions from <a href="https://cloud.google.com/dialogflow/cx/docs/concept/github">Google Cloud</a> to set up GitHub integration:</p>
+
+<ol>
+  <li>If you’re contributing: <a href="https://github.com/thatrobotdev/Pattern-Pigeon/fork">fork this repository</a>.</li>
+  <li>Create a <a href="https://cloud.google.com/dialogflow/cx/docs/concept/github#access_token">fine-grained personal access token</a> from <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub</a>. (Read-only is fine if you’re not contributing.)</li>
+  <li><a href="https://cloud.google.com/dialogflow/cx/docs/concept/github">Create a secret</a> for the token in the Dialogflow CX console.</li>
+  <li><a href="https://cloud.google.com/dialogflow/cx/docs/concept/github#dialogflow_config">Configure Git export/restore integration</a> for your Dialogflow CX agent.</li>
+  <li>Pull the agent from GitHub!</li>
+  <li>If contributing, push your changes and <strong>rebase or amend any unintended edits.</strong><br />
+⚠️ Note: Dialogflow CX <strong>overwrites the entire branch</strong> on push from the console, so make sure to:
+    <ul>
+      <li>Commit only intended changes.</li>
+      <li>Compare changes made in the dashboard vs. those you want to keep.</li>
+      <li>Optionally, make edits in a local text editor and manage them manually.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p><img src="assets/images/Pigeon%20&lt;3%20Apache/Pigeon%20&lt;3%20Apache.png" alt="A pigeon standing in a flock alongside an image of a bird, a heart emoji, and the Apache software foundation feather" /></p>
+
+<blockquote>
+  <p>The pigeon photo used was taken by Muhammad Mahdi Karim/https://micro2macro.net. The image above is licensed under the <a href="https://artlibre.org/licence/lal/en/">Free Art License</a>. (<a href="assets/images/Pigeon%20&lt;3%20Apache/LICENSE">Learn more</a>). This project is not endorsed or connected to the Apache Software Foundation.</p>
+</blockquote>
+
+<p>This project is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License version 2.0</a>, <a href="https://github.com/thatrobotdev/Pattern-Pigeon-website/blob/main/LICENSE">which you can read here</a>.</p>
+
+<!-- START Dialogflow Messenger Embed -->
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css" />
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+<df-messenger project-id="pattern-pidgeon" agent-id="fa2eb7a0-2d7f-49aa-8232-6944236d702d" language-code="en" max-query-length="-1">
+  <df-messenger-chat chat-title="Pattern Pigeon">
+  </df-messenger-chat>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 350px;
+  }
+</style>
+
+<!-- END Dialogflow Messenger Embed -->
+
+
+      </section>
+    </div>
+    <footer>
+    
+      <p>Project maintained by <a href="https://github.com/thatrobotdev">thatrobotdev</a></p>
+    
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
