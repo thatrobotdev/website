@@ -98,7 +98,7 @@ Follow the instructions from [Google Cloud](https://cloud.google.com/dialogflow/
 
 ![A pigeon standing in a flock alongside an image of a bird, a heart emoji, and the Apache software foundation feather](assets/images/Pigeon%20<3%20Apache/Pigeon%20<3%20Apache.png)
 
-> The pigeon photo used was taken by Muhammad Mahdi Karim/<https://micro2macro.net>. The image above is licensed under the [🄯 Free Art License](https://artlibre.org/licence/lal/en/). ([Learn more](assets/images/Pigeon%20<3%20Apache/LICENSE)). This project is not endorsed or connected to the Apache Software Foundation.
+> The pigeon photo used was taken by Muhammad Mahdi Karim/<https://micro2macro.net>. The image above is licensed under the [🄯 Free Art License](https://artlibre.org/licence/lal/en/). ([Learn more](https://github.com/thatrobotdev/Pattern-Pigeon-website/blob/main/assets/images/Pigeon%20%3C3%20Apache/LICENSE.md)). This project is not endorsed or connected to the Apache Software Foundation.
 
 This project is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [which you can read here](https://github.com/thatrobotdev/Pattern-Pigeon-website/blob/main/LICENSE).
 
