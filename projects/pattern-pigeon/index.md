@@ -115,8 +115,8 @@ This project is licensed under the [Apache License version 2.0](https://www.apac
     z-index: 999;
     position: fixed;
     --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-font-family: Lato;
+    --df-messenger-chat-background: #4285F4;
     --df-messenger-message-user-background: #d3e3fd;
     --df-messenger-message-bot-background: #fff;
     bottom: 0;
