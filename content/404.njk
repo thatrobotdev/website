@@ -1,0 +1,19 @@
+---
+permalink: 404.html
+eleventyExcludeFromCollections: true
+---
+
+<script>
+  const url = window.location.pathname;
+  if (url.startsWith('/projects/pattern-pigeon/')) {
+    window.location.href = '/projects/pattern-pigeon/404';
+  }
+</script>
+
+<h1>Content Not Found</h1>
+<p>The page <code><span id="bad-url"></span></code> could not be found.</p>
+<p><a href="/">Go home</a>.</p>
+
+<script>
+  document.getElementById('bad-url').textContent = window.location.pathname;
+</script>
