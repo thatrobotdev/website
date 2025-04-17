@@ -22,7 +22,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=b71055dfd087744c7e261953d15d271d942d4c80">
+    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=70edffa4a71c9ae78518e1c6c02493fd30ed81f9">
     <script src="/projects/pattern-pigeon/assets/js/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -71,6 +71,7 @@
           </li>
         </ul>
       </li>
+      <li><a href="#sample-conversation" id="markdown-toc-sample-conversation">Sample Conversation</a></li>
       <li><a href="#for-developers" id="markdown-toc-for-developers">For developers</a>        <ul>
           <li><a href="#source-code" id="markdown-toc-source-code">Source code</a></li>
           <li><a href="#contributing" id="markdown-toc-contributing">Contributing</a></li>
@@ -140,6 +141,57 @@
 
 <p>With many observers, there could be performance implications of notifying all of them if the operation is costly or takes a long time. Also, the pattern relies on the reliability and format of the notification from the subject, so any updates to the publisher requires updates to the observers.</p>
 
+<h2 id="sample-conversation">Sample Conversation</h2>
+<p>Below is a sample conversation that demonstrates how the bot interacts.</p>
+
+<details>
+  <summary>Expand conversation</summary>
+  <div>
+    <p>Hi!</p>
+    <blockquote>
+      <p>🐦 Hey there! I’m Pattern Pigeon. I’ll help you learn about common software design patterns like Strategy, Composite, and Observer—step by step. I might also chirp in with some pigeon trivia. What would you like to start with?</p>
+    </blockquote>
+
+    <p>Can I learn about the Observer pattern?</p>
+
+    <blockquote>
+      <p>Coo coo! Observer it is! What would you like to learn about?</p>
+    </blockquote>
+
+    <p>What do you know?</p>
+
+    <blockquote>
+      <p>About the observer pattern, why not ask for some good examples? I can answer the difference between the Publisher/Subject and the Observer, why use the Observer pattern, and any disadvantages!</p>
+    </blockquote>
+
+    <p>First, what is the observer pattern?</p>
+
+    <blockquote>
+      <p>Alright, here’s the deal, coo-coo! The Observer Pattern is a behavioral design pattern that establishes a structured subscription mechanism, wherein a ‘Publisher’ (or ‘Subject’) is capable of notifying multiple ‘Observers’ about specific events or changes in state as they occur. Just like that, when the crumbs hit the ground, everybirdy’s in the loop, ya feel me?</p>
+    </blockquote>
+
+    <p>Okay, let’s do something else</p>
+
+    <blockquote>
+      <p>Enough Observer for now, back to the coop! What to dive into next, Composite, Observer, or Strategy?</p>
+    </blockquote>
+
+    <p>Before we continue on the next topic, could you tell me a fun fact about pigeons?</p>
+
+    <blockquote>
+      <p>Oooh, ooh, ooh! Here’s a good one. Did you know that pigeons were “probably one of the first animals to be domesticated by humans?” According to Atlas Obscura, images and carvings of the pigeons first appear in the Middle East and North Africa around 3,000 years ago (https://www.atlasobscura.com/articles/ancient-egypt-pigeon-problem). Want to hear another?</p>
+    </blockquote>
+
+    <p>Nah.</p>
+
+    <blockquote>
+      <p>Enough facts for one day, I get it. Let’s fly back to the coop! What to dive into next, Composite, Observer, or Strategy?</p>
+    </blockquote>
+
+    <p>[End]</p>
+  </div>
+</details>
+
 <h2 id="for-developers">For developers</h2>
 
 <h3 id="source-code">Source code</h3>
@@ -184,8 +236,8 @@
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 
 <df-messenger project-id="pattern-pidgeon" agent-id="fa2eb7a0-2d7f-49aa-8232-6944236d702d" language-code="en" max-query-length="-1">
-  <df-messenger-chat chat-title="Pattern Pigeon">
-  </df-messenger-chat>
+  <df-messenger-chat-bubble chat-title="Pattern Pigeon">
+  </df-messenger-chat-bubble>
 </df-messenger>
 <style>
   df-messenger {
@@ -196,10 +248,8 @@
     --df-messenger-chat-background: #4285F4;
     --df-messenger-message-user-background: #d3e3fd;
     --df-messenger-message-bot-background: #fff;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 350px;
+    bottom: 16px;
+    right: 16px;
   }
 </style>
 
