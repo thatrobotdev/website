@@ -22,7 +22,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=6aa0216e52d7b9422c0f54dcd14771ec1f33fe0e">
+    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=c4c261036850ca91f7d009f41bd1456e0b85e27b">
     <script src="/projects/pattern-pigeon/assets/js/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -60,10 +60,27 @@
   <li><a href="#coo-coo-salutations" id="markdown-toc-coo-coo-salutations">Coo coo! (Salutations!)</a>    <ul>
       <li><a href="#two-ways-to-squack-a-hello" id="markdown-toc-two-ways-to-squack-a-hello">Two ways to squack a “Hello!”</a></li>
       <li><a href="#learn-the-strategy-composite-and-observer-patterns" id="markdown-toc-learn-the-strategy-composite-and-observer-patterns">Learn the Strategy, Composite, and Observer Patterns</a>        <ul>
-          <li><a href="#strategy" id="markdown-toc-strategy">Strategy</a></li>
-          <li><a href="#composite" id="markdown-toc-composite">Composite</a></li>
+          <li><a href="#strategy" id="markdown-toc-strategy">Strategy</a>            <ul>
+              <li><a href="#what-is-the-strategy-pattern" id="markdown-toc-what-is-the-strategy-pattern">What is the Strategy pattern?</a></li>
+              <li><a href="#what-are-examples-of-the-strategy-pattern" id="markdown-toc-what-are-examples-of-the-strategy-pattern">What are examples of the Strategy pattern?</a>                <ul>
+                  <li><a href="#navigation-app" id="markdown-toc-navigation-app">Navigation app</a></li>
+                  <li><a href="#fighting-video-game" id="markdown-toc-fighting-video-game">Fighting video game</a></li>
+                </ul>
+              </li>
+              <li><a href="#why-use-the-strategy-pattern" id="markdown-toc-why-use-the-strategy-pattern">Why use the Strategy pattern?</a></li>
+              <li><a href="#what-disadvantages-are-there-with-the-strategy-pattern" id="markdown-toc-what-disadvantages-are-there-with-the-strategy-pattern">What disadvantages are there with the Strategy pattern?</a></li>
+            </ul>
+          </li>
+          <li><a href="#composite" id="markdown-toc-composite">Composite</a>            <ul>
+              <li><a href="#what-is-the-composite-pattern" id="markdown-toc-what-is-the-composite-pattern">What is the Composite pattern?</a></li>
+              <li><a href="#what-are-examples-of-the-composite-pattern" id="markdown-toc-what-are-examples-of-the-composite-pattern">What are examples of the Composite pattern?</a></li>
+              <li><a href="#why-use-the-composite-pattern" id="markdown-toc-why-use-the-composite-pattern">Why use the Composite pattern?</a></li>
+              <li><a href="#what-disadvantages-are-there-with-the-composite-pattern" id="markdown-toc-what-disadvantages-are-there-with-the-composite-pattern">What disadvantages are there with the Composite pattern?</a></li>
+            </ul>
+          </li>
           <li><a href="#observer" id="markdown-toc-observer">Observer</a>            <ul>
-              <li><a href="#what-are-examples-of-the-observer-pattern" id="markdown-toc-what-are-examples-of-the-observer-pattern">What are examples of the observer pattern?</a></li>
+              <li><a href="#what-is-the-observer-pattern" id="markdown-toc-what-is-the-observer-pattern">What is the Observer pattern?</a></li>
+              <li><a href="#what-are-examples-of-the-observer-pattern" id="markdown-toc-what-are-examples-of-the-observer-pattern">What are examples of the Observer pattern?</a></li>
               <li><a href="#what-is-the-difference-between-the-publishersubject-and-the-observer" id="markdown-toc-what-is-the-difference-between-the-publishersubject-and-the-observer">What is the difference between the Publisher/Subject and the Observer?</a></li>
               <li><a href="#why-use-the-observer-pattern" id="markdown-toc-why-use-the-observer-pattern">Why use the Observer pattern?</a></li>
               <li><a href="#what-disadvantages-are-there-with-the-observer-pattern" id="markdown-toc-what-disadvantages-are-there-with-the-observer-pattern">What disadvantages are there with the Observer pattern?</a></li>
@@ -108,26 +125,61 @@
 
 <h3 id="strategy">Strategy</h3>
 
-<p>Coming soon!</p>
+<h4 id="what-is-the-strategy-pattern">What is the Strategy pattern?</h4>
+
+<p>The Strategy pattern in a behavioral design pattern that defines a family of algorithms, encapsulates each one in a separate class, and makes them interchangeable. This allows the behavior of a class to be selected at runtime without modifying its code.</p>
+
+<h4 id="what-are-examples-of-the-strategy-pattern">What are examples of the Strategy pattern?</h4>
+
+<h5 id="navigation-app">Navigation app</h5>
+
+<p>A common example is a navigation app. Suppose we have a class called <code class="language-plaintext highlighter-rouge">Navigator</code>. Instead of implementing a large <code class="language-plaintext highlighter-rouge">buildRoute(A, B)</code> that handles every routing logic internally, we delegate the route calculation to separate strategy classes–like <code class="language-plaintext highlighter-rouge">DrivingRouteStrategy</code>, <code class="language-plaintext highlighter-rouge">WalkingRouteStrategy</code>, or <code class="language-plaintext highlighter-rouge">CyclingRouteStrategy</code>. The <code class="language-plaintext highlighter-rouge">Navigator</code> simply delegates work to the current strategy, making it easy to switch behaviors without rewriting the logic.</p>
+
+<h5 id="fighting-video-game">Fighting video game</h5>
+
+<p>Another example is a fighting video game, where each character has a unique moveset. Rather than hardcoding each fighter’s behavior into one giant <code class="language-plaintext highlighter-rouge">Fighter</code> class, we can use the Strategy pattern to separate the moveset logic.</p>
+
+<p>For example, we might define a <code class="language-plaintext highlighter-rouge">MovesetStrategy</code> interface with methods like <code class="language-plaintext highlighter-rouge">lightAttack()</code>, <code class="language-plaintext highlighter-rouge">heavyAttack()</code>, and <code class="language-plaintext highlighter-rouge">specialMove()</code>. Then we create different strategy classes like <code class="language-plaintext highlighter-rouge">KarateMoveset</code>, <code class="language-plaintext highlighter-rouge">BoxingMoveset</code>, or <code class="language-plaintext highlighter-rouge">MagicMoveset</code>, each implementing those methods in their own way.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">Fighter</code> class holds a reference to a <code class="language-plaintext highlighter-rouge">MovesetStrategy</code>, allowing you to assign or change fighting styles dynamically—like equipping a new skill set mid-game or supporting custom characters.</p>
+
+<h4 id="why-use-the-strategy-pattern">Why use the Strategy pattern?</h4>
+
+<p>The Strategy pattern encourages software maintainability and extensibility by decoupling algorithms from the classes that use them. This makes software easier to test, more flexible, and open to extension.</p>
+
+<h4 id="what-disadvantages-are-there-with-the-strategy-pattern">What disadvantages are there with the Strategy pattern?</h4>
+
+<p>While the Strategy pattern offers flexibility, there are also a few trade-offs. There are more classes to manage, increasing code complexity if not organized well. For simple behavior, it might be unnecessarily complicate the design.</p>
 
 <h3 id="composite">Composite</h3>
 
-<p>Coming soon!</p>
+<h4 id="what-is-the-composite-pattern">What is the Composite pattern?</h4>
+
+<p>TODO</p>
+
+<h4 id="what-are-examples-of-the-composite-pattern">What are examples of the Composite pattern?</h4>
+
+<p>TODO</p>
+
+<h4 id="why-use-the-composite-pattern">Why use the Composite pattern?</h4>
+
+<p>TODO</p>
+
+<h4 id="what-disadvantages-are-there-with-the-composite-pattern">What disadvantages are there with the Composite pattern?</h4>
+
+<p>TODO</p>
 
 <h3 id="observer">Observer</h3>
 
+<h4 id="what-is-the-observer-pattern">What is the Observer pattern?</h4>
+
 <p>The Observer Pattern is a behavioral design pattern that establishes a subscription system, where a “Publisher” (or “Subject”) can notify multiple “Observers” of events or changes in state.</p>
 
-<h4 id="what-are-examples-of-the-observer-pattern">What are examples of the observer pattern?</h4>
+<h4 id="what-are-examples-of-the-observer-pattern">What are examples of the Observer pattern?</h4>
 
-<ul>
-  <li>
-    <p>One is the multiplayer game Pokémon Go. Imagine there’s a wild Pigeon…errr…a wild Pidgeot…, and four players are nearby trying to catch it. When one player successfully captures it, the game needs to notify the other players that the Pidgeot is no longer available. The game server (the “Publisher”) sends updates to all connected clients (the “Observers”) to reflect this change, ensuring consistency across the game world. Hope that helps, coo coo!</p>
-  </li>
-  <li>
-    <p>Another is a weather app. When an event occurs—like a temperature change or an updated rain forecast—the server (acting as the “Publisher”) sends out the new data. All subscribed client apps (the “Observers”) receive the update and refresh the information displayed to the user.</p>
-  </li>
-</ul>
+<p>One is the multiplayer game Pokémon Go. Imagine there’s a wild Pigeon…errr…a wild Pidgeot…, and four players are nearby trying to catch it. When one player successfully captures it, the game needs to notify the other players that the Pidgeot is no longer available. The game server (the “Publisher”) sends updates to all connected clients (the “Observers”) to reflect this change, ensuring consistency across the game world.</p>
+
+<p>Another is a weather app. When an event occurs—like a temperature change or an updated rain forecast—the server (acting as the “Publisher”) sends out the new data. All subscribed client apps (the “Observers”) receive the update and refresh the information displayed to the user.</p>
 
 <h4 id="what-is-the-difference-between-the-publishersubject-and-the-observer">What is the difference between the Publisher/Subject and the Observer?</h4>
 
@@ -142,6 +194,7 @@
 <p>With many observers, there could be performance implications of notifying all of them if the operation is costly or takes a long time. Also, the pattern relies on the reliability and format of the notification from the subject, so any updates to the publisher requires updates to the observers.</p>
 
 <h2 id="sample-conversation">Sample Conversation</h2>
+
 <p>Below is a sample conversation that demonstrates how the bot interacts.</p>
 
 <details>

@@ -31,29 +31,61 @@ Updating this section? Remember to update <https://github.com/thatrobotdev/Patte
 
 ### Strategy
 
-{% comment %}
-TODO
-{% endcomment %}
+#### What is the Strategy pattern?
 
-Coming soon!
+The Strategy pattern in a behavioral design pattern that defines a family of algorithms, encapsulates each one in a separate class, and makes them interchangeable. This allows the behavior of a class to be selected at runtime without modifying its code.
+
+#### What are examples of the Strategy pattern?
+
+##### Navigation app
+
+A common example is a navigation app. Suppose we have a class called `Navigator`. Instead of implementing a large `buildRoute(A, B)` that handles every routing logic internally, we delegate the route calculation to separate strategy classes–like `DrivingRouteStrategy`, `WalkingRouteStrategy`, or `CyclingRouteStrategy`. The `Navigator` simply delegates work to the current strategy, making it easy to switch behaviors without rewriting the logic.
+
+##### Fighting video game
+
+Another example is a fighting video game, where each character has a unique moveset. Rather than hardcoding each fighter’s behavior into one giant `Fighter` class, we can use the Strategy pattern to separate the moveset logic.
+
+For example, we might define a `MovesetStrategy` interface with methods like `lightAttack()`, `heavyAttack()`, and `specialMove()`. Then we create different strategy classes like `KarateMoveset`, `BoxingMoveset`, or `MagicMoveset`, each implementing those methods in their own way.
+
+The `Fighter` class holds a reference to a `MovesetStrategy`, allowing you to assign or change fighting styles dynamically—like equipping a new skill set mid-game or supporting custom characters.
+
+#### Why use the Strategy pattern?
+
+The Strategy pattern encourages software maintainability and extensibility by decoupling algorithms from the classes that use them. This makes software easier to test, more flexible, and open to extension.
+
+#### What disadvantages are there with the Strategy pattern?
+
+While the Strategy pattern offers flexibility, there are also a few trade-offs. There are more classes to manage, increasing code complexity if not organized well. For simple behavior, it might be unnecessarily complicate the design.
 
 ### Composite
 
-{% comment %}
-TODO
-{% endcomment %}
+#### What is the Composite pattern?
 
-Coming soon!
+TODO
+
+#### What are examples of the Composite pattern?
+
+TODO
+
+#### Why use the Composite pattern?
+
+TODO
+
+#### What disadvantages are there with the Composite pattern?
+
+TODO
 
 ### Observer
 
+#### What is the Observer pattern?
+
 The Observer Pattern is a behavioral design pattern that establishes a subscription system, where a “Publisher” (or “Subject”) can notify multiple “Observers” of events or changes in state.
 
-#### What are examples of the observer pattern?
+#### What are examples of the Observer pattern?
 
-- One is the multiplayer game Pokémon Go. Imagine there’s a wild Pigeon…errr…a wild Pidgeot…, and four players are nearby trying to catch it. When one player successfully captures it, the game needs to notify the other players that the Pidgeot is no longer available. The game server (the “Publisher”) sends updates to all connected clients (the “Observers”) to reflect this change, ensuring consistency across the game world. Hope that helps, coo coo!
+One is the multiplayer game Pokémon Go. Imagine there’s a wild Pigeon…errr…a wild Pidgeot…, and four players are nearby trying to catch it. When one player successfully captures it, the game needs to notify the other players that the Pidgeot is no longer available. The game server (the “Publisher”) sends updates to all connected clients (the “Observers”) to reflect this change, ensuring consistency across the game world.
 
-- Another is a weather app. When an event occurs—like a temperature change or an updated rain forecast—the server (acting as the “Publisher”) sends out the new data. All subscribed client apps (the “Observers”) receive the update and refresh the information displayed to the user.
+Another is a weather app. When an event occurs—like a temperature change or an updated rain forecast—the server (acting as the “Publisher”) sends out the new data. All subscribed client apps (the “Observers”) receive the update and refresh the information displayed to the user.
 
 #### What is the difference between the Publisher/Subject and the Observer?
 
@@ -68,6 +100,7 @@ There are many advantages. The subject and the observer do not require tight cou
 With many observers, there could be performance implications of notifying all of them if the operation is costly or takes a long time. Also, the pattern relies on the reliability and format of the notification from the subject, so any updates to the publisher requires updates to the observers.
 
 ## Sample Conversation
+
 Below is a sample conversation that demonstrates how the bot interacts.
 
 <details>
@@ -103,7 +136,6 @@ Nah.
 [End]
   </div>
 </details>
-
 
 ## For developers
 
