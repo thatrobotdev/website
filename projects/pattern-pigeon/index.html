@@ -22,7 +22,7 @@
 <!-- End Jekyll SEO tag -->
 
 
-    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=c4c261036850ca91f7d009f41bd1456e0b85e27b">
+    <link rel="stylesheet" href="/projects/pattern-pigeon/assets/css/style.css?v=23c80bc9737920d0fc7c4f1bc0d8c1127d473ae5">
     <script src="/projects/pattern-pigeon/assets/js/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -73,7 +73,11 @@
           </li>
           <li><a href="#composite" id="markdown-toc-composite">Composite</a>            <ul>
               <li><a href="#what-is-the-composite-pattern" id="markdown-toc-what-is-the-composite-pattern">What is the Composite pattern?</a></li>
-              <li><a href="#what-are-examples-of-the-composite-pattern" id="markdown-toc-what-are-examples-of-the-composite-pattern">What are examples of the Composite pattern?</a></li>
+              <li><a href="#what-are-examples-of-the-composite-pattern" id="markdown-toc-what-are-examples-of-the-composite-pattern">What are examples of the Composite pattern?</a>                <ul>
+                  <li><a href="#image-editor" id="markdown-toc-image-editor">Image editor</a></li>
+                  <li><a href="#sec" id="markdown-toc-sec">SEC</a></li>
+                </ul>
+              </li>
               <li><a href="#why-use-the-composite-pattern" id="markdown-toc-why-use-the-composite-pattern">Why use the Composite pattern?</a></li>
               <li><a href="#what-disadvantages-are-there-with-the-composite-pattern" id="markdown-toc-what-disadvantages-are-there-with-the-composite-pattern">What disadvantages are there with the Composite pattern?</a></li>
             </ul>
@@ -155,19 +159,31 @@
 
 <h4 id="what-is-the-composite-pattern">What is the Composite pattern?</h4>
 
-<p>TODO</p>
+<p>The Composite pattern is a structural design pattern used to represent tree-like hierarchies of objects. It allows individual objects (leaves) and groups of objects (composites) to be treated uniformly through a shared interface.</p>
+
+<p>In this pattern, there is a Component interface that both individual elements and composite groups implement. A Composite class contains child components—both leaves and other composites—and delegates all world to them.</p>
 
 <h4 id="what-are-examples-of-the-composite-pattern">What are examples of the Composite pattern?</h4>
 
-<p>TODO</p>
+<h5 id="image-editor">Image editor</h5>
+
+<p>Imagine an image editor that defines a <code class="language-plaintext highlighter-rouge">Graphic</code> interface. The smallest drawable element could be a <code class="language-plaintext highlighter-rouge">Dot</code>, which implements this interface. More complex shapes like <code class="language-plaintext highlighter-rouge">Circle</code> or <code class="language-plaintext highlighter-rouge">CompoundGraphic</code> (which may group multiple <code class="language-plaintext highlighter-rouge">Graphic</code> objects) also implement the same interface. This way, the editor can handle single elements and groups of elements in the same way, such as drawing, moving, or deleting them.</p>
+
+<h5 id="sec">SEC</h5>
+
+<p>The SEC is a great real-world example of the Composite pattern. The conference as a whole can be thought of as a composite object that contains multiple components. These components can be either teams (composite) or players (leaves).</p>
+
+<p>Each player represents a leaf node, an individual unit that does not contain other components. A team represents a composite node containing multiple players and can perform operations like listing player stats, or calculating team rankings. The entire conference could be a composite that contains all teams. Operations like “print all team rosters” or “compute average team performance” can be delegated down through the structure.</p>
+
+<p>Because both teams and players adhere to a common interface (such as <code class="language-plaintext highlighter-rouge">displayStats()</code> or <code class="language-plaintext highlighter-rouge">getRanking()</code>), clients can treat them uniformly. Whether the component is a single player or an entire team, the operation is invoked the same way.</p>
 
 <h4 id="why-use-the-composite-pattern">Why use the Composite pattern?</h4>
 
-<p>TODO</p>
+<p>The Composite pattern is useful when you need to work with tree-like structures where individual objects and groups of objects should be treated the same way. The uniformity of the components and compositions make things simple for clients. It also makes it really easy to scale the tree structure by adding new leaves without changing existing code. It also decouples the client from differentiating between dealing with a single object or a composite, making things simpler!</p>
 
 <h4 id="what-disadvantages-are-there-with-the-composite-pattern">What disadvantages are there with the Composite pattern?</h4>
 
-<p>TODO</p>
+<p>While the Composite pattern is powerful, there are some disadvantages. It can be complex to design, as a component that works for both simple and composite elements can be challenging to make. It’s also hard to restrict behavior because all components share the same interface.</p>
 
 <h3 id="observer">Observer</h3>
 

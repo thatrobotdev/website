@@ -61,19 +61,31 @@ While the Strategy pattern offers flexibility, there are also a few trade-offs. 
 
 #### What is the Composite pattern?
 
-TODO
+The Composite pattern is a structural design pattern used to represent tree-like hierarchies of objects. It allows individual objects (leaves) and groups of objects (composites) to be treated uniformly through a shared interface.
+
+In this pattern, there is a Component interface that both individual elements and composite groups implement. A Composite class contains child components—both leaves and other composites—and delegates all world to them.
 
 #### What are examples of the Composite pattern?
 
-TODO
+##### Image editor
+
+Imagine an image editor that defines a `Graphic` interface. The smallest drawable element could be a `Dot`, which implements this interface. More complex shapes like `Circle` or `CompoundGraphic` (which may group multiple `Graphic` objects) also implement the same interface. This way, the editor can handle single elements and groups of elements in the same way, such as drawing, moving, or deleting them.
+
+##### SEC
+
+The SEC is a great real-world example of the Composite pattern. The conference as a whole can be thought of as a composite object that contains multiple components. These components can be either teams (composite) or players (leaves).
+
+Each player represents a leaf node, an individual unit that does not contain other components. A team represents a composite node containing multiple players and can perform operations like listing player stats, or calculating team rankings. The entire conference could be a composite that contains all teams. Operations like “print all team rosters” or “compute average team performance” can be delegated down through the structure.
+
+Because both teams and players adhere to a common interface (such as `displayStats()` or `getRanking()`), clients can treat them uniformly. Whether the component is a single player or an entire team, the operation is invoked the same way.
 
 #### Why use the Composite pattern?
 
-TODO
+The Composite pattern is useful when you need to work with tree-like structures where individual objects and groups of objects should be treated the same way. The uniformity of the components and compositions make things simple for clients. It also makes it really easy to scale the tree structure by adding new leaves without changing existing code. It also decouples the client from differentiating between dealing with a single object or a composite, making things simpler!
 
 #### What disadvantages are there with the Composite pattern?
 
-TODO
+While the Composite pattern is powerful, there are some disadvantages. It can be complex to design, as a component that works for both simple and composite elements can be challenging to make. It's also hard to restrict behavior because all components share the same interface.
 
 ### Observer
 
