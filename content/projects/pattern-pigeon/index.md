@@ -67,6 +67,44 @@ There are many advantages. The subject and the observer do not require tight cou
 
 With many observers, there could be performance implications of notifying all of them if the operation is costly or takes a long time. Also, the pattern relies on the reliability and format of the notification from the subject, so any updates to the publisher requires updates to the observers.
 
+## Sample Conversation
+Below is a sample conversation that demonstrates how the bot interacts.
+
+<details>
+  <summary>Expand conversation</summary>
+  <div markdown="1">
+Hi!
+> 🐦 Hey there! I’m Pattern Pigeon. I’ll help you learn about common software design patterns like Strategy, Composite, and Observer—step by step. I might also chirp in with some pigeon trivia. What would you like to start with?
+
+Can I learn about the Observer pattern?
+
+> Coo coo! Observer it is! What would you like to learn about?
+
+What do you know?
+
+> About the observer pattern, why not ask for some good examples? I can answer the difference between the Publisher/Subject and the Observer, why use the Observer pattern, and any disadvantages!
+
+First, what is the observer pattern?
+
+> Alright, here’s the deal, coo-coo! The Observer Pattern is a behavioral design pattern that establishes a structured subscription mechanism, wherein a ‘Publisher’ (or ‘Subject’) is capable of notifying multiple ‘Observers’ about specific events or changes in state as they occur. Just like that, when the crumbs hit the ground, everybirdy’s in the loop, ya feel me? 
+
+Okay, let's do something else
+
+> Enough Observer for now, back to the coop! What to dive into next, Composite, Observer, or Strategy?
+
+Before we continue on the next topic, could you tell me a fun fact about pigeons?
+
+> Oooh, ooh, ooh! Here's a good one. Did you know that pigeons were "probably one of the first animals to be domesticated by humans?" According to Atlas Obscura, images and carvings of the pigeons first appear in the Middle East and North Africa around 3,000 years ago (https://www.atlasobscura.com/articles/ancient-egypt-pigeon-problem). Want to hear another?
+
+Nah.
+
+> Enough facts for one day, I get it. Let's fly back to the coop! What to dive into next, Composite, Observer, or Strategy?
+
+[End]
+  </div>
+</details>
+
+
 ## For developers
 
 ### Source code
@@ -110,9 +148,9 @@ This project is licensed under the [Apache License, Version 2.0](https://www.apa
   agent-id="fa2eb7a0-2d7f-49aa-8232-6944236d702d"
   language-code="en"
   max-query-length="-1">
-  <df-messenger-chat
+  <df-messenger-chat-bubble
     chat-title="Pattern Pigeon">
-  </df-messenger-chat>
+  </df-messenger-chat-bubble>
 </df-messenger>
 <style>
   df-messenger {
@@ -123,10 +161,8 @@ This project is licensed under the [Apache License, Version 2.0](https://www.apa
     --df-messenger-chat-background: #4285F4;
     --df-messenger-message-user-background: #d3e3fd;
     --df-messenger-message-bot-background: #fff;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 350px;
+    bottom: 16px;
+    right: 16px;
   }
 </style>
 <!-- END Dialogflow Messenger Embed -->
