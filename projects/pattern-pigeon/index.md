@@ -27,6 +27,10 @@ Updating this section? Remember to update <https://github.com/thatrobotdev/Patte
 1. Why not say hello using the messaging client on the right of your screen?
 2. Call [(361) 360-5763](tel:+13613605763) and you can squack wire to wire!
 
+## Demo video
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GiGUvNdD3oA?si=F4U26NlTYwoaplqD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Learn the Strategy, Composite, and Observer Patterns
 
 ### Strategy
